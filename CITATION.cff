@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Donhauser
+    given-names: Konstantin
+  - family-names: Abad
+    given-names: Javier
+  - family-names: Hulkund
+    given-names: Neha
+  - family-names: Yang
+    given-names: Fanny
+title: "Privacy-preserving data release leveraging optimal transport and particle gradient descent"
+journal: "arXiv preprint arXiv:2401.17823"
+url: "https://arxiv.org/abs/2401.17823"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Donhauser
+      given-names: Konstantin
+    - family-names: Abad
+      given-names: Javier
+    - family-names: Hulkund
+      given-names: Neha
+    - family-names: Yang
+      given-names: Fanny
+  title: "Privacy-preserving data release leveraging optimal transport and particle gradient descent"
+  journal: "arXiv preprint arXiv:2401.17823"
+  year: 2024
+
