@@ -1,23 +1,5 @@
 # PrivPGD:基于粒子梯度下降与最优传输的隐私保护表格数据合成方法
 
-[![arXiv](https://img.shields.io/badge/stat.ML-arXiv%3A2401.17823-B31B1B.svg)](https://arxiv.org/abs/2401.17823)
-[![Python 3.11.5](https://img.shields.io/badge/python-3.11.5-blue.svg)](https://python.org/downloads/release/python-3115/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Pytorch 2.1.2](https://img.shields.io/badge/pytorch-2.1.2-green.svg)](https://pytorch.org/)
-
-本仓库包含 **PrivPGD** 的 Python 实现。PrivPGD 是一种基于边缘分布(marginal-based)的隐私数据合成生成方法,在 **ICML 2024 论文** [《Privacy-preserving data release leveraging optimal transport and particle gradient descent》](https://arxiv.org/abs/2401.17823) 中提出。
-
-## 目录
-
-* [项目概述](#项目概述)
-* [代码结构](#代码结构)
-* [快速开始](#快速开始)
-* [示例与教程](#示例与教程)
-* [新增功能模块](#新增功能模块)
-* [参与贡献](#参与贡献)
-* [联系方式](#联系方式)
-* [引用](#引用)
-
 ## 项目概述
 
 敏感数据集的发布在医疗、政务等数据驱动决策的诸多领域中扮演着关键角色,但发布这类数据往往会引发严重的隐私问题。差分隐私(Differential Privacy,DP)作为一种有效的范式,在日益数据化的世界中提供了切实可行的隐私保护方案。
@@ -33,7 +15,7 @@ PrivPGD 的主要优势包括:
 
 ## 代码结构
 
-`src` 文件夹包含本工具包的核心代码,按功能划分为多个子目录。本项目代码大量借鉴了 [PGM 仓库](https://github.com/ryan112358/private-pgm) 的实现思路。
+`src` 文件夹包含本工具包的核心代码,按功能划分为多个子目录。本项目代码大量借鉴了https://github.com/jaabmar/private-pgd的实现思路。
 
 ### 1. 机制模块(`src/mechanisms`):
    - 负责边缘分布的选择与隐私化处理。
@@ -139,7 +121,7 @@ conda activate privpgd
 
 ### 运行实验
 
-实验通过命令行调用脚本运行,命令处理由 Click(8.1.7 版本)支持。以使用默认超参数和论文中描述的设置,在 ACS Income California 2018 数据集上运行 PrivPGD 为例:
+实验通过命令行调用脚本运行,命令处理由 Click(8.1.7 版本)支持。也可以使用本地IDE运行方式以。使用默认超参数和论文中描述的设置,在Bank Marketing数据集上运行 PrivPGD 为例:
 
 1. 切换(`cd`)到 `examples` 文件夹。
 2. 执行以下命令:
@@ -152,7 +134,7 @@ conda activate privpgd
 
 ### 分步教程
 
-如需详细了解 PrivPGD 的逐步使用方法,请参阅 [Tutorial](examples/Tutorial.ipynb) Jupyter notebook。该 notebook 包含完整的解释与可视化展示,带你完整走通使用 PrivPGD 进行差分隐私数据合成的全过程。
+如需详细了解 PrivPGD 的逐步使用方法,请参阅Jupyter notebook。该 notebook 包含完整的解释与可视化展示,带你完整走通使用 PrivPGD 进行差分隐私数据合成的全过程。
 
 ## 新增功能模块
 
@@ -211,36 +193,6 @@ python recover.py
 2. 运行 `main.py` 进行模型训练与合成数据生成。
 3. 运行 `recover.py` 将合成数据还原为原始格式。
 
-## 参与贡献
-
-我们欢迎社区为本项目贡献力量,贡献方式如下:
-
-1. Fork 本项目
-2. 创建你的特性分支(`git checkout -b feature/AmazingFeature`)
-3. 提交你的修改(`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支(`git push origin feature/AmazingFeature`)
-5. 提交 Pull Request
-
-## 联系方式
-
-如有任何问题,欢迎通过以下方式联系我们:
-
-- Javier Abad Martinez - [javier.abadmartinez@ai.ethz.ch](mailto:javier.abadmartinez@ai.ethz.ch)
-- Konstantin Donhauser - [konstantin.donhauser@ai.ethz.ch](mailto:konstantin.donhauser@ai.ethz.ch)
-- Neha Hulkund - [nhulkund@mit.edu](mailto:nhulkund@mit.edu)
-
-## 引用
-
-如果本代码对你的工作有所帮助,欢迎引用我们的论文:
-
-```
-@article{donhauser2024privacy,
-  title={Privacy-Preserving Data Release Leveraging Optimal Transport and Particle Gradient Descent},
-  author={Donhauser, Konstantin and Abad, Javier and Hulkund, Neha and Yang, Fanny},
-  journal={International Conference on Machine Learning},
-  year={2024}
-}
-```
 
 ## 持续开发中
 
