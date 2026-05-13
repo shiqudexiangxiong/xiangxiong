@@ -23,9 +23,9 @@ logging.basicConfig(level=logging.INFO)
 
 
 def run_privpgd(
-        savedir="../data/datasets/acs_income_CA_2018_default_32/",
-        train_dataset="../data/datasets/acs_income_CA_2018_default_32/data_disc.csv",
-        domain="../data/datasets/acs_income_CA_2018_default_32/domain.json",
+        savedir="../data/datasets/bank/",
+        train_dataset="../data/datasets/baank/data_disc.csv",
+        domain="../data/datasets/bank/domain.json",
         epsilon=2.5,
         delta=0.00001,
         weight_strategy="uniform",
