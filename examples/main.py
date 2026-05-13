@@ -15,7 +15,7 @@ if __name__ == "__main__":
     # #     # gp:gaussian process DP
     #         for _ in range(10):
     #             run_privpgd(weight_strategy=ws,noise_type=para)
-    savedir ="../data/datasets/acs_income/"
+    savedir ="../data/datasets/bank/"
     train_dataset=os.path.join(savedir, "data_disc.csv")
     domain=os.path.join(savedir, "domain.json")
     # for _ in range(5):
