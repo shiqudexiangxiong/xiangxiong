@@ -1,0 +1,2 @@
+dataset_name,weight_strategy,noise_type,time,loss,epsilon,delta,gp_lengthscale,gp_variance,iters,n_particles,lr,scheduler_step,scheduler_gamma,num_projections,scale_reg,p_mask,batch_size,downstream_acc,downstream_f1,covariance_error,counting_query_error,threshold_query_error,sw1_distance,tv_distance
+bank-marketing_default_64,uniform,gp,125.29203605651855,0.0006567906152668002,2.5,1e-05,1.0,1.0,1000,100000,0.1,50,0.75,10,0.0,80,5,0.7401323564169228,0.724332455810455,0.00474471675934469,0.0013939376909407632,0.0004363872134247227,0.0025606689925531776,0.012614437428954094
